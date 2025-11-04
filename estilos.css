@@ -1,0 +1,140 @@
+/* Colores y opciones para sombras y cajas */
+:root{
+    --fondo: #d8dcf1;
+    --principal: #1f2937;
+    --tam-letra:16px;
+    --color-titulo: #b81818;
+    --color-enlace: #318620;
+    --color-fondo-caja: #fff;
+    --resaltado: #0ea5e9;
+    --sombra: 0 8px 24px rgba(0,0,0,0.8);
+    --radius: 12px;
+    --color-recursos: #a2bcdf;
+    --color-contenido: #eaebd5be;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* Opciones de las imágenes de altura, ancho y colocación */
+
+img{
+    width: 500px;
+    height: 500px;
+    display: block;
+}
+
+/* Opciones para cuando se coloque el cursos encima de las imágenes */ 
+
+img:hover{
+    width: 600px;
+    height: 600px;
+    rotate: 15deg;
+    transition: 2s;
+}
+
+/* Tipo de letra de títulos */
+
+h1,h2,h3{
+    line-height: 1.25;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Cajas del índice de contenido. cabecera y pie de página */
+
+.site-header, .site-main, .site-footer{
+    background-color: var(--color-fondo-caja);
+    box-shadow: var(--sombra);
+    border-radius: var(--radius);
+    padding: 10px;
+    margin: 20px;
+}
+
+/* Color y márgenes del título */
+
+.site-title{
+    margin: 10px;
+    padding: 10px;
+    color: var(--color-titulo);
+}
+
+/* Color de las opciones de busqueda de la pagina y links */
+
+a{
+    color: var(--color-enlace);
+    text-decoration: none;
+}
+
+/* Opciones para cuando se coloque el cursos encima de los a */ 
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* Centrar las opciones de busqueda de la pagina y links */
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+/* Colocación del body del contenido */
+
+.body-contenido{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: .75rem 1rem;
+}
+
+/* Personalización main de contacto */
+
+.main-contacto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+    padding: 10px;
+    gap: .75rem 1rem;
+}
+
+/* Personalización main de recursos */
+
+.main-recursos{
+    border-radius: var(--radius);
+    background-color: var(--color-recursos);
+    gap: .75rem 1rem;
+}
+
+/* Personalización del pié de página de contacto */
+
+.footer-contacto{
+    box-shadow: var(--sombra);
+    background-color: var(--color-recursos);
+    margin: 20px;
+}
+
+/*Color y medidas para el apartado main del la hoja contenido */
+
+.main-contenido{
+    gap: .75rem 1rem;
+    border-radius: var(--radius);
+    background-color: var(--color-contenido);
+}
+
+/* Adapatación para móbiles */
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    table{
+        font-size: 0.9em;
+    }
+}
