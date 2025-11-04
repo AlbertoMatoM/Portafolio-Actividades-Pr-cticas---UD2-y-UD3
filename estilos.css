@@ -77,6 +77,7 @@ a:hover{
 nav{
     display: flex;
     justify-content: center;
+    gap: .75rem 1rem;
 }
 
 /* Colocación del body del contenido */
@@ -125,6 +126,10 @@ nav{
     gap: .75rem 1rem;
     border-radius: var(--radius);
     background-color: var(--color-contenido);
+}
+
+.lista{
+    margin: auto;
 }
 
 /* Adapatación para móbiles */
